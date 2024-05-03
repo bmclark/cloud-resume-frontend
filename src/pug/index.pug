@@ -1,0 +1,298 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Bryan Clark - Resume
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+            a.navbar-brand.js-scroll-trigger(href='#page-top')
+                span.d-block.d-lg-none Bryan Clark
+                span.d-none.d-lg-block
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
+            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#about') About
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') Education
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
+                    //- li.nav-item
+                    //-     a.nav-link.js-scroll-trigger(href='#awards') Awards
+
+        // Page Content
+        .container-fluid.p-0
+
+            // About
+            section#about.resume-section
+                .resume-section-content
+                    h1.mb-0
+                        | Bryan  
+                        span.text-primary Clark
+                    .subheading.mb-5
+                        | Fort Myers, FL · (239) 810-1653 · 
+                        a(href='mailto:bmclark@gmail.com') bmclark@gmail.com
+                    p.lead.mb-5
+                        |  Experienced DevOps pro excelling in HPC/cloud optimization, GPU integration, and support dev leadership. Skilled in automation & system reliability. 
+                    .social-icons
+                        a.social-icon(href='https://www.linkedin.com/in/bclarkdev/')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://github.com/bmclark')
+                            i.fab.fa-github
+                        a.social-icon(href='https://blog.bclark.dev/index.xml')
+                            i.fa.fa-rss
+            hr.m-0
+
+            // Experience
+            section#experience.resume-section
+               .resume-section-content
+                    h2.mb-5 Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Software Developer
+                            .subheading.mb-3 Adaptive Computing
+                            p
+                                | Maintained highly optimized HPC images for a node.js application across AWS, GCP, Azure, and Oracle Cloud platforms, utilizing Ansible, Packer, and Terraform.
+                            p
+                                | Significantly optimized resource allocation and performance by integrating Multi-Instance-GPU recognition into TORQUE HPC Resource Manager for NVIDIA Data Center GPUs, enabling up to 7 simultaneous workloads per GPU.
+                            p 
+                                | Improved service delivery and operational efficiency for key clients by 25% by leading ad-hoc support development with vendors to address critical business needs.
+                        .flex-shrink-0
+                            span.text-primary April 2022 - Present
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Cloud Engineer
+                            .subheading.mb-3 Golden Wolf Media
+                            p
+                                | Achieved 99.999% uptime and increased peak traffic capacity by 40% by engineering a highly available WordPress cluster using Terraform, Ansible, and AWS.
+                            p
+                                | Reduced page load times by 50% and managed a 100% increase in high-traffic demands by designing a high-performance WordPress tech stack with OpenLiteSpeed, Redis, and FreeBSD.
+                            p
+                                | Enhanced application functionality by developing and maintaining a Node.js application, ensuring seamless integration with external vendor APIs.
+                        .flex-shrink-0
+                            span.text-primary April 2020 - April 2022
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Installations Coordinator
+                            .subheading.mb-3 Think Simplicity
+                            p
+                                | Streamlined VOIP services across 200+ US hotels by developing a Debian Linux-based image and standardizing configuration with Ansible, significantly enhancing system reliability and efficiency.
+                            p
+                                | Drastically reduced installation times and labor costs by automating equipment installation configurations, cutting onsite install time by 67% and pre-installation man hours by over 80%.
+                            p
+                                | Mitigated service disruptions by serving as Linux/Network SME and implementing root cause analyses and post-mortem meetings following service outages, effectively enhancing system resilience.
+                        .flex-shrink-0
+                            span.text-primary September 2018 - March 2020
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 Web Developer
+                            .subheading.mb-3 Freelance
+                            p
+                                | Enhanced WordPress site performance, achieving a 50% improvement in page load times and better SEO rankings through custom theme and plugin modifications.
+                            p
+                                | Streamlined content updates for non-technical team members by integrating advanced custom fields in WordPress, reducing developer dependency by 70%.
+                            p 
+                                | Boosted user engagement by 40% and increased page views per visit by 30% with interactive WordPress features like custom post types and user forums.
+                        .flex-shrink-0
+                            span.text-primary January 2016 - September 2018
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Build Administration Engineer
+                            .subheading.mb-3 Oracle 
+                            p
+                                | Optimized delivery workflows by orchestrating build and release processes in Java environments using Jenkins/Hudson, ensuring timely and error-free deployments.
+                            p
+                                | Enhanced development efficiency by streamlining CI/CD pipelines in collaboration with developers, accelerating build times by 25%.
+                            p
+                                | Boosted customer satisfaction by enhancing software release quality in partnership with QA teams, implementing rigorous quality assurance practices.
+                        .flex-shrink-0
+                            span.text-primary September 2014 - December 2015
+
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 Education and Certifications
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Western Governors University
+                            .subheading.mb-3 Bachelor of Science
+                            div Information Technology - Security Track
+                        .flex-shrink-0
+                            span.text-primary July 2014
+
+                    h3.mb-0 Certifications
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | AWS Cloud Practitioner 
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | AWS Solutions Architect - Associate (In Progress)
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | LPIC-1 Linux Administrator
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | CompTIA Security+
+                        li 
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | CompTIA Network+
+                        li 
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | CompTIA Linux+
+                        li 
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | CompTIA Project+
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | CCNA Routing & Switching
+                        li 
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | CCNA Security
+
+            hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 Skills
+                    .subheading.mb-3 Programming Languages & Tools
+                    ul.list-inline.list-icons
+                        li
+                            span.list-inline
+                                i.fa.fa-code.dev-icons 
+                            | Programming: Node.js, Python, bash/shell, C/C++, JavaScript, TypeScript, PHP, Java, HTML, CSS, SQL
+                        li 
+                            span.list-inline
+                                i.fa.fa-cloud.dev-icons 
+                            | Cloud: AWS, GCP, Azure, Oracle Cloud, Digital Ocean, Vultr
+                        li 
+                            span.list-inline
+                                i.fab.fa-git.dev-icons 
+                            | DevOps: Ansible, Terraform, Packer, Docker, GitHub, Gitlab, Jenkins, Hudson, Vagrant
+                        li 
+                            span.list-inline
+                                i.fa.fa-microchip.dev-icons 
+                            | High-Performance Computing: NVIDIA Data Center GPUs, CUDA, TORQUE Resource Manager, Infiniband/RoCE, RDMA, OpenMPI, Singularity
+                        li 
+                            span.list-inline
+                                i.fa.fa-database.dev-icons 
+                            | Databases: MySQL, MongoDB, PostgreSQL, Redis
+
+                        li 
+                            span.list-inline
+                                i.fa.fa-server.dev-icons 
+                            | Miscellaneous: VOIP, Linux Administration, Networking, FreeBSD 
+                    //- .subheading.mb-3 Workflow
+                    //- ul.fa-ul.mb-0
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Mobile-First, Responsive Design
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Browser Testing & Debugging
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Functional Teams
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Agile Development & Scrum
+
+            hr.m-0
+
+            // Projects
+            section#projects.resume-section
+                .resume-section-content
+                    h2.mb-5 Projects
+                    ul.fa-ul.mb-0
+                        li 
+                            span.fa-li 
+                            a.dev-icons(href='https://blog.bclark.dev/tags/cloud-resume-challenge/')
+                                i.fa.fa-link.dev-icons
+                            a(href='https://blog.bclark.dev/tags/cloud-resume-challenge/') Cloud Resume Challenge - Blog posts about the technology behind this site!
+                        li
+                            span.fa-li
+                            a.dev-icons(href='https://blog.bclark.dev')
+                                i.fa.fa-link.dev-icons
+                            a(href='https://blog.bclark.dev') Tech Blog discussing my latest projects
+                        li
+                            span.fa-li
+                            a.dev-icons(href='https://www.github.com/bmclark/cloud-resume-frontend')
+                                i.fab.fa-github-alt.dev-icons
+                            a(href='https://www.github.com/bmclark/cloud-resume-frontend') Cloud Resume Challenge - Frontend (This site)
+                        //- li
+                        //-     span.fa-li
+                        //-     a.dev-icons(href='https://www.github.com/bmclark/cloud-resume-backend')
+                        //-         i.fab.fa-github-alt.dev-icons
+                        //-     | Cloud Resume Challenge - Backend (API)
+                        li 
+                            span.fa-li
+                            a.dev-icons(href='https://www.github.com/bmclark/.dotfiles')
+                                i.fab.fa-github-alt.dev-icons
+                            a(href='https://www.github.com/bmclark/.dotfiles') My dotfiles
+
+            hr.m-0
+
+            // Awards
+            //- section#awards.resume-section
+            //-     .resume-section-content
+            //-         h2.mb-5 Awards & Certifications
+            //-         ul.fa-ul.mb-0
+            //-             li
+            //-                 span.fa-li
+            //-                     i.fas.fa-trophy.text-warning
+            //-                 | Google Analytics Certified Developer
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
