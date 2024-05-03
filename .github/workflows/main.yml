@@ -24,3 +24,7 @@ jobs:
       - name: Deploy to S3
         run: |
           aws s3 sync . s3://bclark-cloud-resume-frontend --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CF_DIST_ID }} --paths "/*"
